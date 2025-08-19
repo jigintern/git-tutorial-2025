@@ -16,8 +16,8 @@ CREATE TABLE Hello (
     FOREIGN KEY(id) REFERENCES User(id)
 );
 
-
-INSERT INTO Hello(message) VALUES("Hello World!");
+INSERT INTO User(name) VALUES("test");
+INSERT INTO Hello(user_id, message) VALUES(1, "Hello World!");
 
 SELECT message FROM Hello;
 
