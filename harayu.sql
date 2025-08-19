@@ -1,3 +1,7 @@
+CREATE DATABASE Temp;
+
+USE Temp;
+
 CREATE TABLE Hello (
     id INTEGER AUTO_INCREMENT,
     message VARCHAR(16) NOT NULL,
@@ -8,9 +12,12 @@ CREATE TABLE Hello (
 CREATE TABLE User (
     id INTEGER AUTO_INCREMENT,
     name VARCHAR(16) UNIQUE,
-    PRIMARY KEY(id),  
+    PRIMARY KEY(id)
 );
 
 INSERT INTO Hello(message) VALUES("Hello World!");
 
 SELECT message FROM Hello;
+
+
+DROP DATABASE Temp;
