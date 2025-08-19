@@ -16,6 +16,10 @@ int main()
     int n;
     scanf("%d",&n);
     printStar(n);
+    cout << HelloWorld()<<endl;
     return 0;
 }
 
+int HelloWorld(){
+    return "Hello";
+}
