@@ -39,10 +39,10 @@ clf.fit(X, y)
 dump(clf, 'shogi_model.joblib')
 
 
-img = cv2.imread('test_keima.png', cv2.IMREAD_GRAYSCALE);
-img = cv2.resize(img, (64,64));
-descriptor = hog.compute(img);
-predicted = clf.predict([descriptor.flatten()]);
+img = cv2.imread('test_keima.png', cv2.IMREAD_GRAYSCALE)
+img = cv2.resize(img, (64,64))
+descriptor = hog.compute(img)
+predicted = clf.predict([descriptor.flatten()])
 
-print(f"推論結果: {predicted[0]}");
+print(f"推論結果: {predicted[0]}")
 

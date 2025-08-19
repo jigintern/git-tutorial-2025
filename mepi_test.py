@@ -37,13 +37,13 @@ for cnt in contours:
 
     if len(approx) == 4:
         square_count += 1
-        cv2.drawContours(image_result, [approx], -1, (0,255,0), 2);
+        cv2.drawContours(image_result, [approx], -1, (0,255,0), 2)
     else:
-        cv2.drawContours(image_result, [approx], -1, (0,0,255), 2);
+        cv2.drawContours(image_result, [approx], -1, (0,0,255), 2)
     
 
 # 結果保存
-cv2.imwrite('detected_squares.png', image_result);
+cv2.imwrite('detected_squares.png', image_result)
 
 # 結果出力
-print(f"検出された四角形の数: {square_count}");
+print(f"検出された四角形の数: {square_count}")
