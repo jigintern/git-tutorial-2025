@@ -24,5 +24,9 @@ int main(void){
 
 bool dice(int num1,int num2){
   bool ans = true;
+  int num = rand() % num1;
+  printf("%d\n",num);
+
+  ans = num > num2;
   return ans;
 }
