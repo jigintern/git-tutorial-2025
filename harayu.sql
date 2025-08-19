@@ -10,6 +10,7 @@ CREATE TABLE User (
 
 CREATE TABLE Hello (
     id INTEGER AUTO_INCREMENT,
+    user_id INTEGER NOT NULL,
     message VARCHAR(16) NOT NULL,
     PRIMARY KEY(id),
     FOREIGN KEY(id) REFERENCES User(id)
