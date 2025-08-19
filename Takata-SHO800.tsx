@@ -1,11 +1,18 @@
+"use client";
+const Home = () => {
 
-const Takata = () => {
-    
-  return (
-    <main>
-        hoge
-    </main>
-  );
+    // ロジック部分
+    document.querySelectorAll("*").forEach((element) => { // すべてのDOMに対し
+        if (element instanceof HTMLElement) {  // 型チェック
+            console.log(element.getHTML()) // 要素のHTMLを取得して出力
+        }
+    })
+
+    return (
+        <main>
+            hoge
+        </main>
+    );
 }
 
-export default Takata;
+export default Home;
