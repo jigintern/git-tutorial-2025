@@ -6,14 +6,15 @@ void printStar(int n){
         for(int j=1;j<=i;j++){
             cout << "*";
         }
-        cout << endl;
+        printf("\n");
     }
 }
 int main()
 {
-    
+    cin.tie(0);
+    ios::sync_with_stdio(false);
     int n;
-    cin >> n;
+    scanf("%d",&n);
     printStar(n);
     return 0;
 }
