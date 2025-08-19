@@ -8,8 +8,10 @@ int main()
 	cin >> a;
 	cin >> b;
 	if (a < b)
+	{
 		cout << a;
 		cout << "<" << b << endl;
+	}
 	else
 	{
 		cout << a;
