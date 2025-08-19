@@ -1,5 +1,4 @@
-
-const Takata = () => {
+const Home = () => {
     
   return (
     <main>
@@ -8,4 +7,4 @@ const Takata = () => {
   );
 }
 
-export default Takata;
+export default Home;
