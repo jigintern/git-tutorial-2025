@@ -13,7 +13,7 @@ hog = cv2.HOGDescriptor(
     _nbins=9
 )
 
-X = []
+x = []
 y = []
 
 # データセット読み込み
@@ -27,10 +27,10 @@ for label in ['fu_up','fu_down',
         img = cv2.imread(file, cv2.IMREAD_GRAYSCALE)
         img = cv2.resize(img, (64,64))
         descriptor = hog.compute(img)
-        X.append(descriptor.flatten())
+        x.append(descriptor.flatten())
         y.append(label)
 
-X = np.array(X)
+x = np.array(x)
 y = np.array(y)
 
 # SVM学習
